@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--config", "imagenet64.yml", "--exp", "experiments/celeba/dpmsolver++_multistep_order1_10_logSNR_type-dpmsolver", "--sample", "--fid", "--timesteps=10", "--eta", "0", "--ni", "--skip_type", "logSNR", "--sample_type", "dpmsolver++", "--dpm_solver_order", "2", "--dpm_solver_method", "multistep", "--dpm_solver_type", "dpmsolver", "--port", "12350"]
+        }
+    ]
+}
